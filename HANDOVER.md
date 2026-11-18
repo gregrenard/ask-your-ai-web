@@ -43,7 +43,7 @@ Why anyone would pay: the box that opens an assistant is free everywhere (askaiw
 ## Decisions already taken
 
 - One generated page per language on its own address (not a script that swaps text), for indexing.
-- Sign-in by emailed link, no password, with the account created at payment. Default stack Supabase and Stripe, to be confirmed by the owner.
+- Sign-in with Clerk (a development instance exists) and payment with Stripe used directly, not Clerk Billing, which is subscription-only. The marketing site stays static; the app is a separate service at `app.ask-your-ai.me`. See section 3 of `TODO.md`.
 - The check is free; the 10 USD kit pays to edit and download; the owner hosts everything.
 - Title: "Make your website conversational." Name: Ask your AI about me.
 - The preview stays noindex until the domain and the legal pages are ready; one flag removes it.
@@ -51,7 +51,7 @@ Why anyone would pay: the box that opens an assistant is free everywhere (askaiw
 ## Open decisions (the owner)
 
 - The model provider key, so the model benchmark can run (in the private project).
-- The sign-in stack, the Stripe account, the price and promise of the hosted plan, the legal wording.
+- The Stripe account, the Clerk production setup on the domain, whether the account is created before or after payment, the price and promise of the hosted plan, the legal wording.
 - Native review of the Spanish, Italian, Dutch and German copy, and the Dutch title.
 - Whether to ask the owner of an example site for permission to show it publicly (no real example is shown today).
 

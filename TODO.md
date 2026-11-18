@@ -18,7 +18,7 @@ Status on 2026-11-18. The engine, the model benchmark and the test fixtures are 
 - [ ] (owner) Point ask-your-ai.me at the host (GitHub Pages custom domain: a CNAME file, DNS records at the registrar, Enforce HTTPS) and decide whether www redirects to the bare domain.
 - [ ] Rebuild with the domain: widget from `site-widget/config.json`, then `python3 site-src/build_site.py --base https://ask-your-ai.me --index`, then check all six pages and the widget on the real domain. Steps are in `LAUNCH.md`.
 - [ ] Real contact: a form endpoint that actually delivers (an Apps Script endpoint or an email relay), a public contact address, and a test that a message arrives. The corner box's backup popup depends on it too.
-- [ ] Legal pages in the six languages or at least English with a clear link: terms of use, privacy policy (what is crawled, what is stored, the named sub-processors such as the model provider, Stripe, the auth and hosting providers, and that the data is not used for training), refund policy, a way to delete an account and its data. (owner) approve the wording; have a lawyer look before real payments.
+- [ ] Legal pages in the six languages or at least English with a clear link: terms of use, privacy policy (what is crawled, what is stored, the named sub-processors: Clerk (sign-in), Stripe (payment), the model provider and the hosting providers, and that the data is not used for training), refund policy, a way to delete an account and its data. (owner) approve the wording; have a lawyer look before real payments.
 - [ ] (owner) Native review of the Spanish, Italian, Dutch and German copy, and a look at the French. Tables: `site-src/i18n/strings.txt` and `js.txt`. Decide the registers (vous, tú, tu, je, Sie) and the Dutch title.
 - [ ] A 404 page, an apple-touch icon and a web manifest, and the real favicon set (the SVG exists).
 - [ ] Remove or replace the simulated dashboard from the public page, or keep it clearly labelled as a preview.
@@ -33,18 +33,28 @@ Status on 2026-11-18. The engine, the model benchmark and the test fixtures are 
 - [ ] The result page: the fact sheet next to a live preview of the box in the site's colours, the exact prompt a visitor sends, the unverified facts and contradictions, and the "what would an AI say about you" readout with a shareable result URL and its own share card (designed in the brief, not built).
 - [ ] Test the pipeline on two real sites against their hand-written briefs, and on three sites we did not write.
 
-## 3. Payment and accounts
+## 3. Accounts and payment: Clerk for sign-in, Stripe for money
 
-- [ ] (owner) Create the Stripe account (keys, bank, tax), and the product: the 10 USD kit. Build against test keys first, then switch to live only after section 1 legal pages exist.
-- [ ] Checkout keyed by email and site domain, a webhook that unlocks edit and download, and the receipt.
-- [ ] (owner) Choose the sign-in stack: default is Supabase (emailed link, no password) with Postgres and row-level security. Accounts are created at payment from the Stripe email.
-- [ ] The kit generator: zip with the fact sheet, `ask-your-ai.js`, `INTEGRATE.md`, demo page, contact endpoint and a prompt for the owner's own assistant, in the owner's language.
-- [ ] Install guides per platform (WordPress, Wix, Squarespace, Webflow, Framer, plain HTML), including which plan each builder needs for custom code, and a "test in a private window" tip.
-- [ ] The real dashboard: sites, fact sheet in three layers (generated, owner edits, merged), widget settings, install, billing through the Stripe portal, account deletion.
+Decision taken: Clerk for authentication (it replaces the earlier Supabase default), and Stripe used directly for payment, not Clerk Billing. Why: Clerk Billing covers subscriptions only (no one-time charge) and adds a 0.7% fee on top of Stripe's own, while the 10 USD kit is a one-time purchase, so Stripe Checkout and a webhook are needed anyway; one Stripe account then also serves the later monthly plan, with one customer portal. Clerk's free plan covers 50,000 retained users (read on clerk.com/pricing on 2026-11-18; re-check before relying on it). A Clerk development instance already exists (its screen shows "Development mode").
+
+Architecture: the marketing site stays static on GitHub Pages. Clerk's JavaScript can load on a static page, but the dashboard, the Stripe webhook and the entitlement check need a server, so the app is a separate service at `app.ask-your-ai.me` (Next.js on Vercel is Clerk's native path) that calls the engine service. Do not try to bolt Clerk onto `index.html`.
+
+Steps, in order:
+
+- [ ] a. App skeleton at `app.ask-your-ai.me` with one route that verifies a Clerk session on the server.
+- [ ] b. Clerk sign-in on the development instance (email code or link, social sign-in optional). (owner) Production instance: Clerk gives DNS records to add on the domain (check its current requirements) and new keys; do it at the same moment as the domain in section 1. It removes the "Development mode" badge, and users of the development instance do not carry over to production.
+- [ ] c. Stripe in test mode: Checkout with `mode: payment` for the 10 USD kit, `client_reference_id` set to the Clerk user ID, success and cancel URLs back to the app. (owner) Create the Stripe account (keys, bank, tax) and the product.
+- [ ] d. Webhook on `checkout.session.completed`: verify the signature, record the entitlement idempotently (our own table keyed by the Clerk user ID, or Clerk user metadata). Choose the database host for sites, crawls, fact-sheet versions, widget configs and entitlements.
+- [ ] e. Gate editing and the kit download on the entitlement. The kit generator: a zip with the fact sheet, `ask-your-ai.js`, `INTEGRATE.md`, a demo page, the contact endpoint and a prompt for the owner's own assistant, in the owner's language.
+- [ ] f. The dashboard: sites, fact sheet in three layers (generated, owner edits, merged), widget settings, install, billing through Stripe's customer portal, profile and account deletion through Clerk's built-in components plus deletion of our own data.
+- [ ] g. Install guides per platform (WordPress, Wix, Squarespace, Webflow, Framer, plain HTML), including which plan each builder needs for custom code, and a "test in a private window" tip.
+- [ ] h. (owner) Decide the order of account and payment. The mockup and the copy say the account is created with the email used to pay and a sign-in link is sent (pay first). Clerk can do that through its Backend API (create the user and a sign-in token; verify that sign-in tokens exist in the current backend SDK before relying on it). The more common pattern is to sign in before checkout, with fewer moving parts. If sign-in comes first, the kit page and one FAQ answer change in all six languages.
+- [ ] i. Switch Stripe and Clerk to live only after the legal pages of section 1 exist.
 
 ## 4. After launch: kept current and hosted
 
 - [ ] (owner) Price and promise of the "kept current" plan (re-read frequency, response time).
+- [ ] The monthly plan is a Stripe subscription on the same Stripe account and customer portal, not Clerk Billing (subscriptions only, plus a fee on top of Stripe's).
 - [ ] Hosted widget with a domain allowlist, a scheduled re-crawl, a diff the owner approves, and a rule that a line the owner edited is never overwritten.
 - [ ] A browser event when the box or an assistant is used (for example `ask-your-ai:open`), so owners can count openings in their own analytics.
 - [ ] Two more assistants as options, Grok and Mistral, which accept a prefilled question in the URL.
