@@ -1,0 +1,285 @@
+{
+  "site_url": "https://gregrenard.github.io/ask-your-ai-web",
+  "brief_file": "ask-your-ai.md",
+  "brief_path": "../web/ask-your-ai.md",
+  "person": {
+    "name": "Ask your AI",
+    "first_name": "Ask your AI",
+    "kind": "company",
+    "role": {
+      "en": "Make your website conversational",
+      "fr": "Rendez votre site conversationnel",
+      "es": "Haz tu web conversacional",
+      "it": "Rendi il tuo sito conversazionale",
+      "nl": "Laat je website het gesprek aangaan",
+      "de": "Machen Sie Ihre Website dialogfähig"
+    },
+    "tagline": {
+      "en": "its way of turning a website into a fact sheet that assistants can read and a contact route for visitors",
+      "fr": "sa manière de transformer un site web en fiche de faits lisible par les assistants et en voie de contact pour les visiteurs",
+      "es": "its way of turning a website into a fact sheet that assistants can read and a contact route for visitors",
+      "it": "its way of turning a website into a fact sheet that assistants can read and a contact route for visitors",
+      "nl": "its way of turning a website into a fact sheet that assistants can read and a contact route for visitors",
+      "de": "its way of turning a website into a fact sheet that assistants can read and a contact route for visitors"
+    }
+  },
+  "topic": {
+    "en": "making a website readable by AI assistants",
+    "fr": "rendre un site web lisible par les assistants IA",
+    "es": "making a website readable by AI assistants",
+    "it": "making a website readable by AI assistants",
+    "nl": "making a website readable by AI assistants",
+    "de": "making a website readable by AI assistants"
+  },
+  "who": {
+    "en": "people and small companies who want AI assistants to describe them accurately and send them real contacts",
+    "fr": "des personnes et de petites entreprises qui veulent que les assistants IA les décrivent avec exactitude et leur envoient de vrais contacts",
+    "es": "people and small companies who want AI assistants to describe them accurately and send them real contacts",
+    "it": "people and small companies who want AI assistants to describe them accurately and send them real contacts",
+    "nl": "people and small companies who want AI assistants to describe them accurately and send them real contacts",
+    "de": "people and small companies who want AI assistants to describe them accurately and send them real contacts"
+  },
+  "proof_fact": {
+    "en": "every fact in the brief must come from the owner's own site and the owner approves it",
+    "fr": "chaque fait de la fiche vient du site du propriétaire et celui-ci la valide",
+    "es": "every fact in the brief must come from the owner's own site and the owner approves it",
+    "it": "every fact in the brief must come from the owner's own site and the owner approves it",
+    "nl": "every fact in the brief must come from the owner's own site and the owner approves it",
+    "de": "every fact in the brief must come from the owner's own site and the owner approves it"
+  },
+  "stories": {
+    "en": [
+      "Facts about you wrong: the fact sheet is written only from the owner's own site and anything unverifiable is left out and shown to the owner",
+      "Site hard for an AI to read: the agent reads every page, both languages, contact routes, colours and fonts, including pages built with scripts",
+      "Visitors who leave after an answer: the box opens their own assistant already fact sheeted and prepares a message that fills in the owner's contact form",
+      "Not technical: an install guide for the owner's platform and a prompt to paste into the owner's own assistant",
+      "Kept current: a hosted plan is planned with a monthly re-read of the site and owner approval of each change",
+      "Price: a $10 one-time kit, the owner sees the result for free and pays to edit and download"
+    ],
+    "fr": [
+      "Des faits inexacts : la fiche est écrite uniquement à partir du site du propriétaire, et tout ce qui n'est pas vérifiable est écarté et montré au propriétaire",
+      "Un site difficile à lire pour une IA : l'agent lit chaque page, chaque langue, les voies de contact, les couleurs et les polices, y compris les pages construites avec des scripts",
+      "Des visiteurs qui repartent après une réponse : l'encart ouvre leur propre assistant déjà informé et prépare un message qui remplit le formulaire de contact du propriétaire",
+      "Pas technique : des étapes d'installation pour la plateforme du propriétaire et un prompt à coller dans son propre assistant",
+      "Toujours à jour : une offre hébergée est prévue avec une relecture mensuelle du site et la validation de chaque changement par le propriétaire",
+      "Prix : un kit à 10 $ en une fois, le propriétaire voit le résultat gratuitement et ne paie que pour modifier et télécharger"
+    ],
+    "es": [
+      "Facts about you wrong: the fact sheet is written only from the owner's own site and anything unverifiable is left out and shown to the owner",
+      "Site hard for an AI to read: the agent reads every page, both languages, contact routes, colours and fonts, including pages built with scripts",
+      "Visitors who leave after an answer: the box opens their own assistant already fact sheeted and prepares a message that fills in the owner's contact form",
+      "Not technical: an install guide for the owner's platform and a prompt to paste into the owner's own assistant",
+      "Kept current: a hosted plan is planned with a monthly re-read of the site and owner approval of each change",
+      "Price: a $10 one-time kit, the owner sees the result for free and pays to edit and download"
+    ],
+    "it": [
+      "Facts about you wrong: the fact sheet is written only from the owner's own site and anything unverifiable is left out and shown to the owner",
+      "Site hard for an AI to read: the agent reads every page, both languages, contact routes, colours and fonts, including pages built with scripts",
+      "Visitors who leave after an answer: the box opens their own assistant already fact sheeted and prepares a message that fills in the owner's contact form",
+      "Not technical: an install guide for the owner's platform and a prompt to paste into the owner's own assistant",
+      "Kept current: a hosted plan is planned with a monthly re-read of the site and owner approval of each change",
+      "Price: a $10 one-time kit, the owner sees the result for free and pays to edit and download"
+    ],
+    "nl": [
+      "Facts about you wrong: the fact sheet is written only from the owner's own site and anything unverifiable is left out and shown to the owner",
+      "Site hard for an AI to read: the agent reads every page, both languages, contact routes, colours and fonts, including pages built with scripts",
+      "Visitors who leave after an answer: the box opens their own assistant already fact sheeted and prepares a message that fills in the owner's contact form",
+      "Not technical: an install guide for the owner's platform and a prompt to paste into the owner's own assistant",
+      "Kept current: a hosted plan is planned with a monthly re-read of the site and owner approval of each change",
+      "Price: a $10 one-time kit, the owner sees the result for free and pays to edit and download"
+    ],
+    "de": [
+      "Facts about you wrong: the fact sheet is written only from the owner's own site and anything unverifiable is left out and shown to the owner",
+      "Site hard for an AI to read: the agent reads every page, both languages, contact routes, colours and fonts, including pages built with scripts",
+      "Visitors who leave after an answer: the box opens their own assistant already fact sheeted and prepares a message that fills in the owner's contact form",
+      "Not technical: an install guide for the owner's platform and a prompt to paste into the owner's own assistant",
+      "Kept current: a hosted plan is planned with a monthly re-read of the site and owner approval of each change",
+      "Price: a $10 one-time kit, the owner sees the result for free and pays to edit and download"
+    ]
+  },
+  "portrait": "assets/logo.svg",
+  "portrait_src": "https://gregrenard.github.io/ask-your-ai-web/assets/logo.svg",
+  "portrait_fit": "contain",
+  "brand": {
+    "ink": "#1E2A5A",
+    "paper": "#FAF8F4",
+    "accent": "#D1262B"
+  },
+  "fonts": {
+    "display": "system-ui,-apple-system,'Segoe UI',sans-serif",
+    "sans": "system-ui,-apple-system,'Segoe UI',sans-serif"
+  },
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "de"
+  ],
+  "contact": {
+    "url": "https://gregrenard.github.io/ask-your-ai-web/#contact",
+    "email": "",
+    "endpoint": "",
+    "prefill": true,
+    "link_selector": "a[href$=\"#contact\"]",
+    "fields": {
+      "first": "#c-name",
+      "email": "#c-email",
+      "message": "#c-msg"
+    }
+  },
+  "proof_line": {
+    "en": ""
+  },
+  "ui": {
+    "en": {
+      "w": {
+        "title": "Ask your AI about us",
+        "text": "How it works, what it costs and what you get, explained by your own AI assistant.",
+        "pill": "Ask your AI about us"
+      },
+      "p": {
+        "title": "Ask your AI about us.",
+        "lead": "Get the facts through your own assistant. Want us to look at your site? It will help you get in touch.",
+        "aiP": "Your assistant reads our public fact sheet and answers your questions: how it works, what you get, what it costs. Claude and ChatGPT open with the prompt ready: just press Enter.",
+        "msg": "Your site and your question",
+        "ph": "Your site address, what you would like, any question..."
+      }
+    },
+    "fr": {
+      "w": {
+        "title": "Demandez à votre IA à propos de nous",
+        "text": "Comment ça marche, combien ça coûte et ce que vous obtenez, expliqué par votre propre assistant IA.",
+        "pill": "Demandez à votre IA à propos de nous"
+      },
+      "p": {
+        "title": "Demandez à votre IA à propos de nous.",
+        "lead": "Obtenez les faits via votre propre assistant. Envie que nous regardions votre site ? Il vous aidera à nous contacter.",
+        "aiP": "Votre assistant lit notre fiche de faits publique et répond à vos questions : comment ça marche, ce que vous obtenez, combien ça coûte. Claude et ChatGPT s’ouvrent avec le prompt prêt : appuyez simplement sur Entrée.",
+        "msg": "Votre site et votre question",
+        "ph": "L'adresse de votre site, ce que vous souhaitez, toute question..."
+      }
+    },
+    "es": {
+      "w": {
+        "title": "Pregunta a tu IA sobre nosotros",
+        "text": "Cómo funciona, cuánto cuesta y qué obtienes, explicado por tu propio asistente de IA.",
+        "hint": "Claude y ChatGPT se abren con el prompt listo: solo pulsa Intro.",
+        "pill": "Pregunta a tu IA sobre nosotros"
+      },
+      "p": {
+        "title": "Pregunta a tu IA sobre nosotros.",
+        "lead": "Obtén los datos a través de tu propio asistente. ¿Quieres que miremos tu sitio? Te ayudará a ponerte en contacto.",
+        "aiP": "Tu asistente lee nuestra ficha de datos pública y responde a tus preguntas: cómo funciona, qué obtienes, cuánto cuesta. Claude y ChatGPT se abren con el prompt listo: solo pulsa Intro.",
+        "formH": "¿Prefieres escribirnos directamente?",
+        "first": "Nombre *",
+        "last": "Apellidos",
+        "email": "Correo profesional *",
+        "msg": "Tu sitio y tu pregunta",
+        "ph": "La dirección de tu sitio, lo que te gustaría, cualquier pregunta...",
+        "err": "Añade tu nombre y un correo válido.",
+        "send": "Enviar mi mensaje →",
+        "okH": "Mensaje recibido.",
+        "okP": "Gracias. Te respondemos enseguida.",
+        "or": "o",
+        "more": "Abrir la página de contacto completa",
+        "ready": "Tu mensaje está listo. Revísalo y pulsa Enviar.",
+        "go": "Ir al formulario"
+      }
+    },
+    "it": {
+      "w": {
+        "title": "Chiedi alla tua IA di noi",
+        "text": "Come funziona, quanto costa e cosa ottieni, spiegato dal tuo assistente IA.",
+        "hint": "Claude e ChatGPT si aprono con il prompt pronto: premi semplicemente Invio.",
+        "pill": "Chiedi alla tua IA di noi"
+      },
+      "p": {
+        "title": "Chiedi alla tua IA di noi.",
+        "lead": "Ottieni i fatti tramite il tuo assistente. Vuoi che diamo un'occhiata al tuo sito? Ti aiuterà a metterti in contatto.",
+        "aiP": "Il tuo assistente legge la nostra scheda dei fatti pubblica e risponde alle tue domande: come funziona, cosa ottieni, quanto costa. Claude e ChatGPT si aprono con il prompt pronto: premi semplicemente Invio.",
+        "formH": "Preferisci scriverci direttamente?",
+        "first": "Nome *",
+        "last": "Cognome",
+        "email": "Email di lavoro *",
+        "msg": "Il tuo sito e la tua domanda",
+        "ph": "L'indirizzo del tuo sito, cosa vorresti, qualsiasi domanda...",
+        "err": "Aggiungi il tuo nome e un'email valida.",
+        "send": "Invia il mio messaggio →",
+        "okH": "Messaggio ricevuto.",
+        "okP": "Grazie. Ti risponderemo a breve.",
+        "or": "o",
+        "more": "Apri la pagina di contatto completa",
+        "ready": "Il tuo messaggio è pronto. Rivedilo, poi premi Invia.",
+        "go": "Vai al modulo"
+      }
+    },
+    "nl": {
+      "w": {
+        "title": "Vraag je AI naar ons",
+        "text": "Hoe het werkt, wat het kost en wat je krijgt, uitgelegd door je eigen AI-assistent.",
+        "hint": "Claude en ChatGPT openen met de prompt klaar: druk gewoon op Enter.",
+        "pill": "Vraag je AI naar ons"
+      },
+      "p": {
+        "title": "Vraag je AI naar ons.",
+        "lead": "Krijg de feiten via je eigen assistent. Wil je dat we naar je site kijken? Hij helpt je contact op te nemen.",
+        "aiP": "Je assistent leest ons openbare feitenblad en beantwoordt je vragen: hoe het werkt, wat je krijgt, wat het kost. Claude en ChatGPT openen met de prompt klaar: druk gewoon op Enter.",
+        "formH": "Liever rechtstreeks schrijven?",
+        "first": "Voornaam *",
+        "last": "Achternaam",
+        "email": "Zakelijk e-mailadres *",
+        "msg": "Je site en je vraag",
+        "ph": "Het adres van je site, wat je wilt, elke vraag...",
+        "err": "Voeg je voornaam en een geldig e-mailadres toe.",
+        "send": "Verstuur mijn bericht →",
+        "okH": "Bericht ontvangen.",
+        "okP": "Bedankt. We komen snel bij je terug.",
+        "or": "of",
+        "more": "Open de volledige contactpagina",
+        "ready": "Je bericht is klaar. Lees het na en druk op Verstuur.",
+        "go": "Naar het formulier"
+      }
+    },
+    "de": {
+      "w": {
+        "title": "Fragen Sie Ihre KI nach uns",
+        "text": "So funktioniert es, was es kostet und was Sie bekommen, erklärt von Ihrem eigenen KI-Assistenten.",
+        "hint": "Claude und ChatGPT öffnen sich mit fertigem Prompt: einfach Enter drücken.",
+        "pill": "Fragen Sie Ihre KI nach uns"
+      },
+      "p": {
+        "title": "Fragen Sie Ihre KI nach uns.",
+        "lead": "Erfahren Sie die Fakten über Ihren eigenen Assistenten. Sollen wir uns Ihre Website ansehen? Er hilft Ihnen, Kontakt aufzunehmen.",
+        "aiP": "Ihr Assistent liest unser öffentliches Faktenblatt und beantwortet Ihre Fragen: wie es funktioniert, was Sie bekommen, was es kostet. Claude und ChatGPT öffnen sich mit fertigem Prompt: einfach Enter drücken.",
+        "formH": "Möchten Sie uns lieber direkt schreiben?",
+        "first": "Vorname *",
+        "last": "Nachname",
+        "email": "Geschäftliche E-Mail *",
+        "msg": "Ihre Website und Ihre Frage",
+        "ph": "Die Adresse Ihrer Website, was Sie sich wünschen, jede Frage...",
+        "err": "Bitte geben Sie Ihren Vornamen und eine gültige E-Mail an.",
+        "send": "Meine Nachricht senden →",
+        "okH": "Nachricht erhalten.",
+        "okP": "Vielen Dank. Wir melden uns in Kürze.",
+        "or": "oder",
+        "more": "Vollständige Kontaktseite öffnen",
+        "ready": "Ihre Nachricht ist fertig. Prüfen Sie sie und klicken Sie auf Senden.",
+        "go": "Zum Formular"
+      }
+    }
+  },
+  "story_limits": {
+    "es": "(never Ask your AI's method or phases, never a list of figures)",
+    "it": "(never Ask your AI's method or phases, never a list of figures)",
+    "nl": "(never Ask your AI's method or phases, never a list of figures)",
+    "de": "(never Ask your AI's method or phases, never a list of figures)"
+  },
+  "prompt_templates": {
+    "es": "prompt-es.txt",
+    "it": "prompt-it.txt",
+    "nl": "prompt-nl.txt",
+    "de": "prompt-de.txt"
+  }
+}
