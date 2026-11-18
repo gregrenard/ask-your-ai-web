@@ -4,7 +4,7 @@
 
 ## What it is
 
-- **One sentence:** the owner pastes the address of their website, an agent reads it and builds a kit: a facts brief that ChatGPT, Claude, Gemini and Perplexity can read, a box and a contact popup for the site, and an install guide.
+- **One sentence:** the owner pastes the address of their website, an agent reads it and builds a kit: a fact sheet that ChatGPT, Claude, Gemini and Perplexity can read, a box and a contact popup for the site, and an install guide.
 - **For whom:** people and small companies with a website who want AI assistants to describe them accurately and to send them real contacts.
 - **Status:** in preparation. The page shows the intended journey with simulated data. Nothing is crawled or charged yet.
 
@@ -25,7 +25,7 @@
 
 ## What is in the kit
 
-- The facts brief, one file named ask-<name>.md.
+- The fact sheet, one file named ask-<name>.md.
 - The box and the contact popup, with the owner's portrait or logo, colours and fonts.
 - An install guide for the owner's platform and a backup contact form.
 - A demo page.
@@ -53,10 +53,6 @@
 - *Who receives the messages?* The owner, through their own contact form.
 - *Will it say wrong things about me?* It only uses the approved brief and the site, and says so when something is not published.
 - *What happens when my site changes?* With the kit, the owner re-runs the agent. With the hosted plan, the site is re-read monthly and changes need approval.
-
-## Examples
-
-- gregory-renard.com, the first site built this way.
 
 ## Who is behind it
 
