@@ -1,0 +1,170 @@
+# Ask your AI about me
+
+> Ask your AI about me is a service in preparation, created by Freedom.AI Lab. It makes a website conversational: an agent reads the owner's site, writes a fact sheet checked against the owner's own pages, and builds a small box that opens the visitor's own AI assistant already briefed, ending in the owner's contact form with the message prepared. The owner approves every word. It is not a chatbot, and no visitor message passes through the service.
+
+Status: public preview with simulated data. Nothing is crawled, charged or sent yet. The site is available in English, French, Spanish, Italian, Dutch and German.
+
+Facts in one place: a kit costs $10, once. The check and the preview are free. A hosted plan that re-reads the site every month and asks the owner to approve each change is planned, with no price set. The product is built for people and small companies that have a website.
+
+
+
+---
+
+# Ask your AI about me — what the service does, how it works and what it costs
+
+> Facts about Ask your AI about me (ask-your-ai.me), a service in preparation, created by Freedom.AI Lab, that makes a website conversational. The owner starts from the website address alone.
+
+## What it is
+
+- **One sentence:** the owner pastes the address of a website, an agent reads it and builds a kit: a fact sheet that ChatGPT, Claude, Gemini and Perplexity can read, a small box and a contact popup for the site, and install steps.
+- **Mission:** help the web become conversational, starting with each owner's own site.
+- **For whom:** people and small companies with a website who want AI assistants to describe them accurately and to send them real contacts.
+- **Not a chatbot:** visitors bring their own AI assistant. No AI runs on the owner's site and no visitor message passes through the service.
+- **Status:** in preparation. The public preview shows the intended journey with simulated data. Nothing is crawled, charged or sent yet.
+
+## Which need matches which part
+
+- **"AI assistants get facts about me wrong":** the fact sheet is written only from the owner's own site. Every number, name and date must appear in the owner's text. Anything that cannot be checked is left out and shown to the owner, and contradictions between pages are listed.
+- **"My site is hard for an AI to read":** the agent reads every page and every language, the contact routes, colours, fonts and portrait, including pages built with scripts.
+- **"Visitors get an answer and leave":** the box opens the visitor's own assistant already briefed. If it fits, the assistant writes an introduction and a link that fills in the owner's contact form, and the visitor reviews and sends.
+- **"I am not technical":** the kit comes with install steps for the owner's platform and a prompt to paste into the owner's own assistant, which walks the owner through them.
+- **"I want it kept current":** a hosted plan is planned, with a monthly re-read of the site and approval of each change by the owner.
+
+## How it works
+
+1. The owner pastes the address of the site.
+2. The agent reads the whole site and writes the fact sheet.
+3. The owner sees the fact sheet next to a preview of the box in the site's colours and approves every word. Nothing goes live without the owner.
+4. The owner adds one line to the site, with the install steps for the platform, or on the planned hosted plan with one script tag.
+
+## What is in the kit
+
+- The fact sheet, one file named ask-<name>.md.
+- The box and the contact popup, with the owner's portrait or logo, colours and fonts.
+- Install steps for the owner's platform (WordPress, Wix, Squarespace, Webflow, Framer, plain HTML), a prompt for the owner's own assistant, and a backup contact form.
+- A demo page.
+
+## Principles
+
+- Facts only. The fact sheet is plain statements about the owner, with no commands to the reader.
+- The assistant never speaks for the owner and promises no price or availability.
+- Nothing is sent without the visitor: the assistant only fills in the owner's contact form, and the visitor reviews and sends.
+- The owner approves every word before it goes live, and again after each update. A line the owner edited by hand is never overwritten by a new reading.
+
+## Languages
+
+- The site and the box are available in English, French, Spanish, Italian, Dutch and German. The box follows the language switch of the owner's site.
+
+## Price
+
+- **Check and preview:** free, no account.
+- **Kit:** $10, one time. The owner pays to edit and download, hosts everything and keeps it.
+- **Kept current (hosted plan):** planned, monthly, price not set.
+
+## What is not published
+
+- The launch date, the price of the hosted plan, the number of sites built and any customer list are not published. Refund terms, terms of use and the privacy policy are not published yet.
+
+## Questions people ask
+
+- *Does it work on my platform?* If a script can be added to the pages, yes.
+- *Who receives the messages?* The owner, through the owner's own contact form.
+- *Will it say wrong things about me?* It only uses the approved fact sheet and the site, and says so when something is not published.
+- *What happens when my site changes?* With the kit, the owner runs the check again. With the hosted plan, the site is re-read monthly and changes need approval.
+
+## Who is behind it
+
+- Ask your AI about me is a creation of Freedom.AI Lab (https://www.freedom.ai).
+
+## How to contact
+
+- A contact form is on the site: https://gregrenard.github.io/ask-your-ai-web/#contact
+
+## Scope of this page
+
+- Everything above describes the service as designed. Prices and dates not listed here are not decided.
+
+
+---
+
+# How Ask your AI about me works
+
+Ask your AI about me turns the address of a website into three things: a fact sheet that AI assistants can read, a small box for the site, and install steps. This page describes the three steps an owner takes and what a visitor then sees.
+
+## The three steps for the owner
+
+1. **Paste your address.** An agent reads the whole site: every page, every language, the contact routes, the colours, the fonts and the portrait or logo. No account and no files are needed for the check.
+2. **Check your fact sheet.** Every fact on the sheet must come from the owner's own pages. A fact that cannot be verified is left out and shown to the owner, and a contradiction between two pages is listed instead of being resolved silently. The owner sees the sheet next to a preview of the box in the site's colours and approves every word before anything goes live.
+3. **Add one line.** The owner pastes a script tag into the site. The kit includes install steps for WordPress, Wix, Squarespace, Webflow, Framer and plain HTML, and a prompt to paste into the owner's own assistant (ChatGPT, Claude or Gemini), which walks the owner through the steps.
+
+## What a visitor sees
+
+- A small box in the corner of the site. One click opens the visitor's own AI assistant (ChatGPT, Claude, Perplexity, or Google's AI mode for Gemini) already briefed with a link to the owner's fact sheet.
+- The assistant answers from the fact sheet and says so when something is not published.
+- If the visitor wants to get in touch, the assistant writes a short introduction and a link that fills in the owner's contact form. The visitor reviews the message and sends it. Nothing is sent without the visitor.
+- The box and the popup follow the site's own language switch.
+
+## What it is not
+
+- It is not a chatbot. No AI runs on the owner's site, and no visitor message passes through Ask your AI about me.
+- It never invents a fact, never speaks for the owner, and never promises a price or an availability on the owner's behalf.
+
+## Status
+
+The public preview uses simulated data. Languages of the site: English, French, Spanish, Italian, Dutch and German. Pricing is on https://gregrenard.github.io/ask-your-ai-web/pricing.md.
+
+
+---
+
+# Pricing of Ask your AI about me
+
+## Free
+
+- The check: paste a website address and read the generated fact sheet and the preview of the box. No account.
+
+## Kit, $10 once
+
+- The fact sheet, editable by the owner.
+- The box and the contact popup, in the site's colours and language.
+- Install steps for the owner's platform (WordPress, Wix, Squarespace, Webflow, Framer, plain HTML) and a prompt for the owner's own assistant.
+- The owner hosts everything and keeps it. The owner pays only to edit and download.
+
+## Kept current, planned, price not set
+
+- Everything in the kit.
+- Freedom.AI Lab hosts the box.
+- The owner's site is re-read every month, and the owner approves each change. A line the owner edited by hand is never overwritten by a new reading.
+
+## Notes
+
+- On the public preview the checkout is simulated and nothing is charged. The real version will use Stripe Checkout in test mode first.
+- The price of the hosted plan, refund terms, terms of use and the privacy policy are not published yet.
+
+
+---
+
+# Questions and answers about Ask your AI about me
+
+## Will the AI say wrong things about me?
+It only uses the fact sheet the owner approves. Every fact is checked against the owner's own pages, contradictions between pages are listed for the owner, and when something is not published the assistant says so instead of guessing.
+
+## Does it work on my platform?
+If a script can be added to the pages, yes: WordPress, Wix, Squarespace, Webflow, Framer or plain HTML. The kit includes install steps for each.
+
+## Who receives the messages?
+The owner, through the owner's own contact form. The assistant only fills the form in; the visitor reviews and sends. Messages do not pass through Ask your AI about me.
+
+## What happens when my site changes?
+With the kit, the owner runs the check again. With the planned hosted plan, the site is re-read every month and the owner approves what changed.
+
+## Do I need to be technical?
+No. The owner pastes an address, reads one page and adds one line.
+
+## Is it a chatbot?
+No. Visitors bring their own AI assistant; nothing runs on the owner's site except the small box.
+
+## Which languages does it support?
+The site and the box are available in English, French, Spanish, Italian, Dutch and German, and the box follows the language switch of the owner's site.
+
+## Who is behind it?
+Ask your AI about me is a creation of Freedom.AI Lab (https://www.freedom.ai).

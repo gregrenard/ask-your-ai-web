@@ -1,0 +1,26 @@
+# Public preview. Pages carry a noindex tag until launch; remove it (build_site.py --index) when the domain is live.
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://gregrenard.github.io/ask-your-ai-web/sitemap.xml

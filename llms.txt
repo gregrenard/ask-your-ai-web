@@ -1,12 +1,32 @@
-# Ask your AI
+# Ask your AI about me
 
-> Ask your AI is a service in preparation, created by Freedom.AI Lab. The owner of a website pastes its address; an agent reads the site and builds a fact sheet that ChatGPT, Claude, Gemini and Perplexity can read, a box and a contact popup for the site, and an install guide.
+> Ask your AI about me is a service in preparation, created by Freedom.AI Lab. It makes a website conversational: an agent reads the owner's site, writes a fact sheet checked against the owner's own pages, and builds a small box that opens the visitor's own AI assistant already briefed, ending in the owner's contact form with the message prepared. The owner approves every word. It is not a chatbot, and no visitor message passes through the service.
 
-## Facts
+Status: public preview with simulated data. Nothing is crawled, charged or sent yet. The site is available in English, French, Spanish, Italian, Dutch and German.
 
-- [Fact sheet](ask-your-ai.md): what the service does, how it works, what is in the kit, principles, price and what is not published.
-- [Home page](index.html): the intended journey, with simulated data.
+Facts in one place: a kit costs $10, once. The check and the preview are free. A hosted plan that re-reads the site every month and asks the owner to approve each change is planned, with no price set. The product is built for people and small companies that have a website.
+
+## Facts and guides (Markdown)
+
+- [Fact sheet](https://gregrenard.github.io/ask-your-ai-web/ask-your-ai.md): what the service is, which need matches which part, how it works, what is in the kit, principles, price, what is not published, who is behind it.
+- [How it works](https://gregrenard.github.io/ask-your-ai-web/how-it-works.md): the three steps an owner takes, and what a visitor sees.
+- [Pricing](https://gregrenard.github.io/ask-your-ai-web/pricing.md): the $10 kit, the planned hosted plan, and what is free.
+- [Questions and answers](https://gregrenard.github.io/ask-your-ai-web/faq.md): accuracy, platforms, who receives messages, updates, technical level.
+
+## The site, by language
+
+- [English](https://gregrenard.github.io/ask-your-ai-web/)
+- [Français](https://gregrenard.github.io/ask-your-ai-web/fr/)
+- [Español](https://gregrenard.github.io/ask-your-ai-web/es/)
+- [Italiano](https://gregrenard.github.io/ask-your-ai-web/it/)
+- [Nederlands](https://gregrenard.github.io/ask-your-ai-web/nl/)
+- [Deutsch](https://gregrenard.github.io/ask-your-ai-web/de/)
 
 ## Not published
 
-- Launch date, the price of the hosted plan, the number of sites built, any customer list, refund terms, terms of use and privacy policy.
+- The launch date, the price of the hosted plan, the number of sites built, any customer list, refund terms, terms of use and the privacy policy.
+
+## Optional
+
+- [Full text of the pages above in one file](https://gregrenard.github.io/ask-your-ai-web/llms-full.txt)
+- [Sitemap](https://gregrenard.github.io/ask-your-ai-web/sitemap.xml)

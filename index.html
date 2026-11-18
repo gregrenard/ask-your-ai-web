@@ -4,6 +4,29 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex">
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="canonical" href="https://gregrenard.github.io/ask-your-ai-web/">
+<link rel="alternate" hreflang="en" href="https://gregrenard.github.io/ask-your-ai-web/">
+<link rel="alternate" hreflang="fr" href="https://gregrenard.github.io/ask-your-ai-web/fr/">
+<link rel="alternate" hreflang="es" href="https://gregrenard.github.io/ask-your-ai-web/es/">
+<link rel="alternate" hreflang="it" href="https://gregrenard.github.io/ask-your-ai-web/it/">
+<link rel="alternate" hreflang="nl" href="https://gregrenard.github.io/ask-your-ai-web/nl/">
+<link rel="alternate" hreflang="de" href="https://gregrenard.github.io/ask-your-ai-web/de/">
+<link rel="alternate" hreflang="x-default" href="https://gregrenard.github.io/ask-your-ai-web/">
+<meta name="theme-color" content="#1e2a5a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ask your AI about me">
+<meta property="og:title" content="Ask your AI about me — Make your website conversational.">
+<meta property="og:description" content="Make your website conversational. Your visitors&#x27; own AI learns your facts, answers from them and sends the right people to you.">
+<meta property="og:url" content="https://gregrenard.github.io/ask-your-ai-web/">
+<meta property="og:image" content="https://gregrenard.github.io/ask-your-ai-web/assets/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ask your AI about me — Make your website conversational.">
+<meta name="twitter:description" content="Make your website conversational. Your visitors&#x27; own AI learns your facts, answers from them and sends the right people to you.">
+<meta name="twitter:image" content="https://gregrenard.github.io/ask-your-ai-web/assets/og-en.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://gregrenard.github.io/ask-your-ai-web/#org", "name": "Freedom.AI Lab", "url": "https://www.freedom.ai"}, {"@type": "WebSite", "@id": "https://gregrenard.github.io/ask-your-ai-web/#site", "name": "Ask your AI about me", "url": "https://gregrenard.github.io/ask-your-ai-web/", "inLanguage": "en", "publisher": {"@id": "https://gregrenard.github.io/ask-your-ai-web/#org"}}, {"@type": "SoftwareApplication", "name": "Ask your AI about me", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "description": "Make your website conversational. Your visitors' own AI learns your facts, answers from them and sends the right people to you.", "inLanguage": ["en", "fr", "es", "it", "nl", "de"], "creator": {"@id": "https://gregrenard.github.io/ask-your-ai-web/#org"}, "offers": {"@type": "Offer", "name": "Kit", "price": "10", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder", "url": "https://gregrenard.github.io/ask-your-ai-web/#pricing"}}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Will the AI say wrong things about me?", "acceptedAnswer": {"@type": "Answer", "text": "It only uses the fact sheet you approve. Every fact is checked against your own pages, and when something isn't published the AI says so."}}, {"@type": "Question", "name": "Does it work on my platform?", "acceptedAnswer": {"@type": "Answer", "text": "If you can add a script to your pages, yes: WordPress, Wix, Squarespace, Webflow, Framer or plain HTML."}}, {"@type": "Question", "name": "Who receives the messages?", "acceptedAnswer": {"@type": "Answer", "text": "You do, through your own contact form. The AI only fills it in. The visitor reviews and sends."}}, {"@type": "Question", "name": "What happens when my site changes?", "acceptedAnswer": {"@type": "Answer", "text": "With the kit, you run the check again. With the hosted plan, we re-read your site every month and you approve what changed."}}, {"@type": "Question", "name": "Do I need to be technical?", "acceptedAnswer": {"@type": "Answer", "text": "No. You paste an address, read one page, and add one line."}}]}]}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ask your AI</title>
 <meta name="description" content="Make your website conversational. Your visitors' own AI learns your facts, answers from them and sends the right people to you.">
@@ -15,10 +38,23 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
 .wrap{max-width:980px;margin:0 auto;padding:0 16px}
-header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
 .logo{font-weight:700;letter-spacing:-.02em}
 .logo b{color:var(--accent)}
-header nav{display:flex;gap:18px}header a{color:var(--mute);text-decoration:none;font-size:14px}@media(max-width:560px){header nav a:nth-child(-n+2){display:none}}
+.top{position:sticky;top:0;z-index:2147483050;background:color-mix(in srgb,var(--bg) 90%,transparent);-webkit-backdrop-filter:saturate(1.3) blur(10px);backdrop-filter:saturate(1.3) blur(10px);border-bottom:1px solid color-mix(in srgb,var(--line) 70%,transparent)}
+.hdr{display:flex;justify-content:space-between;align-items:center;padding-top:12px;padding-bottom:12px}
+.top nav{display:flex;gap:18px;align-items:center}
+.top a{color:var(--mute);text-decoration:none;font-size:14px}
+.top .logo{color:var(--ink)}
+.top nav a:not(.logo):hover{color:var(--ink)}
+.band,#home>h1,section.step{scroll-margin-top:84px}
+.lang{position:relative}
+.lang summary{list-style:none;cursor:pointer;font-size:13px;font-weight:700;letter-spacing:.06em;border:1.5px solid var(--line);border-radius:99px;padding:5px 11px;color:var(--ink);background:var(--card)}
+.lang summary::-webkit-details-marker{display:none}
+.lang[open] summary{border-color:var(--ink)}
+.langmenu{position:absolute;right:0;top:calc(100% + 8px);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px;min-width:150px;box-shadow:0 12px 32px rgba(0,0,0,.14)}
+.top .langmenu a{display:block;padding:8px 12px;border-radius:8px;font-size:14.5px;color:var(--ink)}
+.top .langmenu a:hover,.top .langmenu a[aria-current]{background:var(--bg);font-weight:700}
+@media(max-width:620px){.top nav a:nth-child(-n+2){display:none}.top nav{gap:12px}}
 h1{font-size:clamp(28px,5.2vw,56px);line-height:1.06;letter-spacing:-.035em;margin:44px 0 16px;max-width:none}
 h1 em{font-style:normal;color:var(--accent)}
 .lede{font-size:19px;color:var(--mute);max-width:none;margin:0 0 28px}
@@ -171,7 +207,7 @@ details p{color:var(--mute);margin:8px 0 0;max-width:none}
 .cform{display:grid;gap:10px;max-width:560px;margin-top:18px}
 .cform input,.cform textarea{font:inherit;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
 .cform .go{justify-self:start}
-.modal{position:fixed;inset:0;background:rgba(10,12,16,.55);display:none;place-items:center;z-index:50;padding:16px}
+.modal{position:fixed;inset:0;background:rgba(10,12,16,.55);display:none;place-items:center;z-index:2147483060;padding:16px}
 .modal.on{display:grid}
 .modal .card{max-width:420px;width:100%}
 .modal h3{margin:0 0 4px}
@@ -186,8 +222,8 @@ footer{margin:70px 0 30px;color:var(--mute);font-size:13.5px;border-top:1px soli
 </style>
 </head>
 <body>
+<header class="top"><div class="wrap hdr"><a class="logo" href="">ask<b>·</b>your<b>·</b>ai<span style="color:var(--mute);font-weight:400">.me</span></a><nav><a href="#why">Why</a><a href="#demo">See it work</a><a href="#pricing">Pricing</a><a href="#" id="login-l" style="color:var(--ink);font-weight:600">Log in</a><details class="lang" id="lang"><summary aria-label="Language">EN</summary><div class="langmenu"><a href="./" hreflang="en" lang="en" aria-current="true">English</a><a href="fr/" hreflang="fr" lang="fr">Français</a><a href="es/" hreflang="es" lang="es">Español</a><a href="it/" hreflang="it" lang="it">Italiano</a><a href="nl/" hreflang="nl" lang="nl">Nederlands</a><a href="de/" hreflang="de" lang="de">Deutsch</a></div></details></nav></div></header>
 <div class="wrap">
-<header><div class="logo">ask<b>·</b>your<b>·</b>ai<span style="color:var(--mute);font-weight:400">.me</span></div><nav><a href="#why">Why</a><a href="#demo">See it work</a><a href="#pricing">Pricing</a><a href="#" id="login-l" style="color:var(--ink);font-weight:600">Log in</a></nav></header>
 
 <main>
 <section id="home">
@@ -365,9 +401,10 @@ footer{margin:70px 0 30px;color:var(--mute);font-size:13.5px;border-top:1px soli
 
 <script>
 document.addEventListener("DOMContentLoaded",function(){
+const T={"s1": "Opening {url}", "s2": "Reading {n} pages in all languages", "s3": "Finding contact routes, images, colours and fonts", "s4": "Writing the fact sheet", "s5": "Checking every number, name and date against your text", "s6": "Building the widget in your colours", "yourSite": "your site", "yourSiteCap": "Your site", "flagExample": "3 facts the agent could not verify were left out. 1 contradiction between pages: the About page says 1996, the CV page says 1997.", "flagOther": "Example result. The real run shows the facts it could not verify and any contradiction between your pages.", "briefExample": "# Example Studio — profile, work and contact\n\n> Facts, dates, projects and contact routes about Example Studio, drawn from its website.\n\n## Which project matches which ambition\n\n- **Launching a new brand:** …\n- **Redesigning a product:** …\n- **Training a team:** …\n\n## How to contact Example Studio\n\n- Contact page: https://example-studio.com/contact\n", "briefOther": "# Your name — profile, work and contact\n\n> Facts about you, drawn from your website.\n\n## Which project matches which ambition\n\n- …\n", "askAbout": "Ask your AI about {name}", "ownAssistant": "Your own assistant, already briefed.", "you": "you", "youIni": "Y", "plain": "Plain HTML", "custom": "custom HTML", "setp": "You are {n}, helping me install the \"Ask your AI\" box on my website {url}.\nRead the attached INTEGRATE.md. My site runs on: {plat}.\nGive me the steps one at a time, in my language, and wait for me to confirm each one before the next. Do not publish anything yourself.", "sent": "Simulated: a link was \"sent\" to {m}. Opening your account…", "del": "Simulated: this would permanently delete the account, its sites, briefs and widgets."};
 const EX={
- example:{url:'https://example-studio.com',name:'Example Studio',ini:'E',col:'#1e2a5a',plat:'Plain HTML',pages:14,flag:'3 facts the agent could not verify were left out. 1 contradiction between pages: the About page says 1996, the CV page says 1997.',brief:'# Example Studio — profile, work and contact\n\n> Facts, dates, projects and contact routes about Example Studio, drawn from its website.\n\n## Which project matches which ambition\n\n- **Launching a new brand:** …\n- **Redesigning a product:** …\n- **Training a team:** …\n\n## How to contact Example Studio\n\n- Contact page: https://example-studio.com/contact\n'},
- other:{url:'',name:'you',ini:'Y',col:'#1e2a5a',plat:'custom HTML',pages:12,flag:'Example result. The real run shows the facts it could not verify and any contradiction between your pages.',brief:'# Your name — profile, work and contact\n\n> Facts about you, drawn from your website.\n\n## Which project matches which ambition\n\n- …\n'}
+ example:{url:'https://example-studio.com',name:'Example Studio',ini:'E',col:'#1e2a5a',plat:T.plain,pages:14,flag:T.flagExample,brief:T.briefExample},
+ other:{url:'',name:T.you,ini:T.youIni,col:'#1e2a5a',plat:T.custom,pages:12,flag:T.flagOther,brief:T.briefOther}
 };
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 let cur=EX.other;
@@ -375,7 +412,7 @@ function show(id){$$('section').forEach(s=>{s.classList.remove('on');s.style.dis
 function run(key,url){
  cur=Object.assign({},EX[key]||EX.other);if(url)cur.url=url;
  show('#s-run');
- const steps=['Opening '+(cur.url||'your site'),'Reading '+cur.pages+' pages in all languages','Finding contact routes, images, colours and fonts','Writing the fact sheet','Checking every number, name and date against your text','Building the widget in your colours'];
+ const steps=[T.s1.replace('{url}',cur.url||T.yourSite),T.s2.replace('{n}',cur.pages),T.s3,T.s4,T.s5,T.s6];
  const log=$('#log');log.innerHTML=steps.map(s=>'<li><i class="d"></i>'+s+'</li>').join('');
  const lis=$$('#log li');let i=0;
  (function next(){if(i>0){lis[i-1].classList.remove('run');lis[i-1].classList.add('done')}
@@ -384,7 +421,7 @@ function run(key,url){
 function result(){
  show('#s-res');
  $('#flag').textContent=cur.flag;$('#brief').value=cur.brief;$('#av').textContent=cur.ini;$('#av').style.setProperty('--bsc',cur.col);
- $('#bt').innerHTML='<b>Ask your AI about '+cur.name+'</b><br>Your own assistant, already briefed.';
+ $('#bt').innerHTML='<b>'+T.askAbout.replace('{name}',cur.name)+'</b><br>'+T.ownAssistant;
 }
 $('#f').addEventListener('submit',e=>{e.preventDefault();const v=$('#url').value.trim();if(!v){$('#url').focus();return}run('other',v)});
 $$('[data-ex]').forEach(b=>b.onclick=()=>{const k=b.dataset.ex;$('#url').value=EX[k].url;run(k)});
@@ -397,18 +434,19 @@ function kit(){
 }
 function setP(p){$$('[data-p]').forEach(b=>b.classList.toggle('on',b.dataset.p===p));
  const n={chatgpt:'ChatGPT',claude:'Claude',gemini:'Gemini'}[p];
- $('#pp').value='You are '+n+', helping me install the "Ask your AI" box on my website '+(cur.url||'')+'.\nRead the attached INTEGRATE.md. My site runs on: '+cur.plat+'.\nGive me the steps one at a time, in my language, and wait for me to confirm each one before the next. Do not publish anything yourself.'}
+ $('#pp').value=T.setp.replace('{n}',n).replace('{url}',cur.url||'').replace('{plat}',cur.plat)}
 $$('[data-p]').forEach(b=>b.onclick=()=>setP(b.dataset.p));
-const payM=$('#pay');$('#buy').onclick=()=>{$('#pay-site').textContent=cur.url||'Your site';payM.classList.add('on')};$('#pay-x').onclick=()=>payM.classList.remove('on');$('#pay-ok').onclick=()=>{payM.classList.remove('on');kit()};$$('[data-h="go"]').forEach(b=>b.onclick=()=>{scrollTo({top:0,behavior:'smooth'});setTimeout(()=>$('#url').focus(),400)});
+const payM=$('#pay');$('#buy').onclick=()=>{$('#pay-site').textContent=cur.url||T.yourSiteCap;payM.classList.add('on')};$('#pay-x').onclick=()=>payM.classList.remove('on');$('#pay-ok').onclick=()=>{payM.classList.remove('on');kit()};$$('[data-h="go"]').forEach(b=>b.onclick=()=>{scrollTo({top:0,behavior:'smooth'});setTimeout(()=>$('#url').focus(),400)});
 
 function bars(){const b=$('#bars');b.innerHTML=[3,5,4,8,6,9,7,11,8,12,10,9,14,11].map(h=>'<i style="height:'+h*6+'px"></i>').join('')}
 function app(email){show('#s-app');$('#who').textContent=(email||'you@example.com')+' · Kit';$('#ov-site').textContent=(cur.url||'example-studio.com').replace(/^https?:\/\//,'').replace(/\/$/,'');bars()}
 $$('#atabs button').forEach(b=>b.onclick=()=>{$$('#atabs button').forEach(x=>x.classList.toggle('on',x===b));$$('.pane').forEach(p=>p.classList.toggle('on',p.id==='p-'+b.dataset.t))});
 $('#to-app').onclick=()=>app();
 $('#login-l').onclick=e=>{e.preventDefault();show('#s-login')};
-$('#lg-go').onclick=()=>{const m=$('#lg-mail').value.trim();if(!m){$('#lg-mail').focus();return}$('#lg-msg').textContent='Simulated: a link was "sent" to '+m+'. Opening your account…';setTimeout(()=>app(m),900)};
-$('#del').onclick=e=>{e.preventDefault();alert('Simulated: this would permanently delete the account, its sites, briefs and widgets.')};
+$('#lg-go').onclick=()=>{const m=$('#lg-mail').value.trim();if(!m){$('#lg-mail').focus();return}$('#lg-msg').textContent=T.sent.replace('{m}',m);setTimeout(()=>app(m),900)};
+$('#del').onclick=e=>{e.preventDefault();alert(T.del)};
 
+document.addEventListener('click',e=>{const d=$('#lang');if(d&&d.open&&!d.contains(e.target))d.open=false});
 });</script>
 <div class="modal" id="pay" role="dialog" aria-modal="true" aria-labelledby="pay-t"><div class="card">
 <span class="tag">Simulated checkout · test mode placeholder</span>
