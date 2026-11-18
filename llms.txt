@@ -1,0 +1,12 @@
+# Ask your AI
+
+> Ask your AI is a service in preparation, created by Freedom.AI Lab. The owner of a website pastes its address; an agent reads the site and builds a facts brief that ChatGPT, Claude, Gemini and Perplexity can read, a box and a contact popup for the site, and an install guide.
+
+## Facts
+
+- [Facts brief](ask-your-ai.md): what the service does, how it works, what is in the kit, principles, price and what is not published.
+- [Home page](index.html): the intended journey, with simulated data.
+
+## Not published
+
+- Launch date, the price of the hosted plan, the number of sites built, any customer list, refund terms, terms of use and privacy policy.
